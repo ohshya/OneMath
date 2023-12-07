@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>moduleSelection</class>
+ <widget class="QWidget" name="moduleSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>99999</width>
+    <height>99999</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="modulesBToMain">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#modulesBToMain{
+image: url(:/assets/iconos/home.png);
+background: transparent;
+}
+QPushButton#modulesBToMain:hover{
+	image: url(:/assets/iconos/homeH.png);
+}
+QPushButton#modulesBToMain:pressed{
+	image: url(:/assets/iconos/homeP.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset theme="go-home"/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>15</width>
+     <height>15</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>720</width>
+     <height>396</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="1" column="4">
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="prev">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#prev{
+image: url(:/assets/iconos/left.png);
+background: transparent;
+}
+QPushButton#prev:hover{
+	image: url(:/assets/iconos/leftH.png);
+}
+QPushButton#prev:pressed{
+	image: url(:/assets/iconos/leftP.png);
+}
+QPushButton#prev:disabled{
+	image: url(:/assets/iconos/leftD.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="next">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#next{
+image: url(:/assets/iconos/right.png);
+background: transparent;
+}
+QPushButton#next:hover{
+	image: url(:/assets/iconos/rightH.png);
+}
+QPushButton#next:pressed{
+	image: url(:/assets/iconos/rightP.png);
+}
+QPushButton#next:disabled{
+	image: url(:/assets/iconos/rightD.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" colspan="5">
+     <widget class="SlidingStackedWidget" name="stackedWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>715</width>
+        <height>315</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar::chunk {
+    background: #fcba14;
+}
+QProgressBar{
+background-color: transparent;
+color: black;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="ClickableFrame" name="frameM1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>700</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame#frameM1{
+	background-image: url(:/assets/modules/module1.png);
+	border: 4px solid black; 
+	border-radius: 50px;
+}
+
+#frameM1:hover {
+    border: 4px solid #fdbb14;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <widget class="QProgressBar" name="progressM1">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>611</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelM1">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>110</y>
+             <width>129</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#label
+{
+color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#000000;&quot;&gt;Módulo 1:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelSM1">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>180</y>
+             <width>451</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700; text-decoration: underline; color:#000000;&quot;&gt;Conversión de sistemas numéricos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="2">
+         <widget class="ClickableFrame" name="frameM2">
+          <property name="minimumSize">
+           <size>
+            <width>700</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frameM2{
+	background-image: url(:/assets/modules/moduleG2.png);
+	border: 4px solid black; 
+	border-radius: 50px;
+}
+
+#frameM2:hover {
+    border: 4px solid #fdbb14;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QProgressBar" name="progressM2">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>611</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="textVisible">
+            <bool>true</bool>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+           <property name="textDirection">
+            <enum>QProgressBar::BottomToTop</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelM2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>129</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#label
+{
+color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Módulo 2:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelSM2">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>150</y>
+             <width>181</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700; text-decoration: underline; color:#ffffff;&quot;&gt;Teoría de&lt;br/&gt;conjuntos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0" colspan="2">
+         <widget class="ClickableFrame" name="frameM3">
+          <property name="minimumSize">
+           <size>
+            <width>700</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frameM3{
+	background-image: url(:/assets/modules/moduleG3.png);
+	border: 4px solid black; 
+	border-radius: 50px;
+}
+
+#frameM3:hover {
+    border: 4px solid #fdbb14;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="labelM3">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>20</y>
+             <width>129</width>
+             <height>47</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#label
+{
+color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#000000;&quot;&gt;Módulo 3:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressM3">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>611</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>12</pointsize>
+             <underline>false</underline>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelSM3">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>130</y>
+             <width>301</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700; text-decoration: underline; color:#000000;&quot;&gt;Límite y Continuidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="2">
+         <widget class="ClickableFrame" name="frameM4">
+          <property name="minimumSize">
+           <size>
+            <width>700</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frameM4
+ { 
+	background-image: url(:/assets/modules/moduleG4.png);
+	border: 4px solid black; 
+	border-radius: 50px;
+	background-color: white;
+}
+
+#frameM4:hover {
+    border: 4px solid #fdbb14;
+}
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="labelSM4">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>150</y>
+             <width>141</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700; text-decoration: underline; color:#000000;&quot;&gt;Derivadas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelM4">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>129</width>
+             <height>47</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel#label
+{
+color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#000000;&quot;&gt;Módulo 4:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressM4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>611</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableFrame</class>
+   <extends>QFrame</extends>
+   <header>extendedWidgets/clickableframe.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SlidingStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>extendedWidgets/slidingstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

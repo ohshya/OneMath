@@ -61,7 +61,7 @@
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton{
-image: url(:/assets/B3Exit.png);
+image: url(:/assets/modules/B3Exit.png);
 background-color: white;
 border: 2px solid black;
 border-radius: 15px;
@@ -148,7 +148,7 @@ border: 2px solid #ebae13;
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton{
-image: url(:/assets/B1Modules.png);
+image: url(:/assets/modules/B1Modules.png);
 background-color: white;
 border: 2px solid black;
 border-radius: 15px;
@@ -159,7 +159,7 @@ border: 2px solid #ebae13;
 }
 
 QPushButton:disabled{
-image: url(:/assets/B1D.png);
+image: url(:/assets/modules/B1D.png);
 background-color: #bcbcbc;
 }</string>
             </property>
@@ -197,7 +197,7 @@ background-color: #bcbcbc;
             <property name="styleSheet">
              <string notr="true">QPushButton{
 background-color: white;
-image: url(:/assets/B3Credits.png);
+image: url(:/assets/modules/B3Credits.png);
 border: 2px solid black;
 border-radius: 15px;
 }
@@ -241,7 +241,7 @@ border: 2px solid #ebae13;
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton{
-image: url(:/assets/B2Settings.png);
+image: url(:/assets/modules/B2Settings.png);
 background-color: white;
 border: 2px solid black;
 border-radius: 15px;
@@ -292,7 +292,7 @@ border: 2px solid #ebae13;
       </property>
       <property name="styleSheet">
        <string notr="true">#logo{ 
-image: url(:/assets/logo.png);
+	image: url(:/assets/otros/logo.png);
 }</string>
       </property>
       <property name="frameShape">
@@ -420,9 +420,15 @@ image: url(:/assets/logo.png);
  </widget>
  <customwidgets>
   <customwidget>
+   <class>ClickableFrame</class>
+   <extends>QFrame</extends>
+   <header>extendedWidgets/clickableframe.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>MyButton</class>
    <extends>QPushButton</extends>
-   <header>mybutton.h</header>
+   <header>extendedWidgets/mybutton.h</header>
    <slots>
     <slot>slot1()</slot>
    </slots>
@@ -430,13 +436,7 @@ image: url(:/assets/logo.png);
   <customwidget>
    <class>SineWaveWidget</class>
    <extends>QWidget</extends>
-   <header>sinewavewidget.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>ClickableFrame</class>
-   <extends>QFrame</extends>
-   <header>clickableframe.h</header>
+   <header>extendedWidgets/sinewavewidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

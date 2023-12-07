@@ -1,4 +1,4 @@
-QT += core gui widgets
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -6,79 +6,76 @@ CONFIG += c++17
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
-# DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-ICON += qrc:/assets/icon.ico
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    adduser.cpp \
-    configuracion.cpp \
-    conjuntos.cpp \
-    credits.cpp \
-    exportar.cpp \
+    extendedWidgets/conjuntos.cpp \
+    extendedWidgets/mybutton.cpp \
+    extendedWidgets/sinewavewidget.cpp \
+    extendedWidgets/slidingstackedwidget.cpp \
+    extendedWidgets/switch.cpp \
     global.cpp \
     main.cpp \
+    mainWidgets/configuracion.cpp \
+    mainWidgets/moduleselection.cpp \
+    mainWidgets/profiles.cpp \
     mainwindow.cpp \
-    module1.cpp \
-    module1test.cpp \
-    module2.cpp \
-    module2test.cpp \
-    module3.cpp \
-    module3test.cpp \
-    module4.cpp \
-    moduleselection.cpp \
-    mybutton.cpp \
-    profiles.cpp \
-    sinewavewidget.cpp \
-    slidingstackedwidget.cpp \
-    switch.cpp
+    modulesWidgets/module1.cpp \
+    modulesWidgets/module1test.cpp \
+    modulesWidgets/module2.cpp \
+    modulesWidgets/module2test.cpp \
+    modulesWidgets/module3.cpp \
+    modulesWidgets/module3test.cpp \
+    modulesWidgets/module4.cpp \
+    popupWidgets/adduser.cpp \
+    popupWidgets/credits.cpp \
+    popupWidgets/exportar.cpp
 
 HEADERS += \
-    ClickableFrame.h \
-    SineWaveWidget.h \
-    adduser.h \
-    configuracion.h \
-    conjuntos.h \
-    credits.h \
-    exportar.h \
+    extendedWidgets/ClickableFrame.h \
+    extendedWidgets/SineWaveWidget.h \
+    extendedWidgets/conjuntos.h \
+    extendedWidgets/mybutton.h \
+    extendedWidgets/slidingstackedwidget.h \
+    extendedWidgets/style.h \
+    extendedWidgets/switch.h \
     global.h \
+    mainWidgets/configuracion.h \
+    mainWidgets/moduleselection.h \
+    mainWidgets/profiles.h \
     mainwindow.h \
-    module1.h \
-    module1test.h \
-    module2.h \
-    module2test.h \
-    module3.h \
-    module3test.h \
-    module4.h \
-    moduleselection.h \
-    mybutton.h \
-    profiles.h \
-    slidingstackedwidget.h \
-    style.h \
-    switch.h
-
-FORMS += \
-    adduser.ui \
-    configuracion.ui \
-    conjuntos.ui \
-    credits.ui \
-    exportar.ui \
-    mainwindow.ui \
-    module1.ui \
-    module1test.ui \
-    module2.ui \
-    module2test.ui \
-    module3.ui \
-    module3test.ui \
-    module4.ui \
-    moduleselection.ui \
-    profiles.ui
+    modulesWidgets/module1.h \
+    modulesWidgets/module1test.h \
+    modulesWidgets/module2.h \
+    modulesWidgets/module2test.h \
+    modulesWidgets/module3.h \
+    modulesWidgets/module3test.h \
+    modulesWidgets/module4.h \
+    popupWidgets/adduser.h \
+    popupWidgets/credits.h \
+    popupWidgets/exportar.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-RESOURCES += \
-    resources.qrc
+FORMS += \
+    extendedWidgets/conjuntos.ui \
+    mainWidgets/configuracion.ui \
+    mainWidgets/moduleselection.ui \
+    mainWidgets/profiles.ui \
+    mainwindow.ui \
+    modulesWidgets/module1.ui \
+    modulesWidgets/module1test.ui \
+    modulesWidgets/module2.ui \
+    modulesWidgets/module2test.ui \
+    modulesWidgets/module3.ui \
+    modulesWidgets/module3test.ui \
+    modulesWidgets/module4.ui \
+    popupWidgets/adduser.ui \
+    popupWidgets/credits.ui \
+    popupWidgets/exportar.ui
 
-DISTFILES +=
+RESOURCES += \
+    qrc.qrc

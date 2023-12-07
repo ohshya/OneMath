@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>module1test</class>
+ <widget class="QWidget" name="module1test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="backModuleS">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#backModuleS{
+image: url(:/assets/iconos/left.png);
+background: transparent;
+}
+#backModuleS:hover{
+	image: url(:/assets/iconos/leftH.png);
+}
+#backModuleS:pressed{
+	image: url(:/assets/iconos/leftP.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextPart">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>10</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>821</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="preguntaText">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>70</y>
+     <width>611</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Small Semibold</family>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+border-radius: 20px;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Pregunta</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="margin">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aceptar">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>530</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>310</y>
+     <width>612</width>
+     <height>212</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="R1">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka Small Semibold</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#R1{
+background-color: white;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+#R1:hover{
+border: 2px solid teal;}</string>
+      </property>
+      <property name="text">
+       <string>Respuesta 1</string>
+      </property>
+      <property name="wordWrap" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="R2">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka Small Semibold</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: white;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+QPushButton:hover{
+border: 2px solid blue;
+}</string>
+      </property>
+      <property name="text">
+       <string>Respuesta 2</string>
+      </property>
+      <property name="wordWrap" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="R3">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka Small Semibold</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#R3{
+background-color: white;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+#R3:hover{
+border: 2px solid purple;
+}</string>
+      </property>
+      <property name="text">
+       <string>Respuesta 3</string>
+      </property>
+      <property name="wordWrap" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="R4">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka Small Semibold</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#R4{
+background-color: white;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+#R4:hover{
+border: 2px solid orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Respuesta 4</string>
+      </property>
+      <property name="wordWrap" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="aviso">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>80</y>
+     <width>161</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/assets/otros/aviso.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="points">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>250</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Small</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

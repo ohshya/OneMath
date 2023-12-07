@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>conjuntos</class>
+ <widget class="QWidget" name="conjuntos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="con1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>152</width>
+     <height>186</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/1N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>24</y>
+     <width>100</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/2N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>152</width>
+     <height>186</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/3N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>98</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/4N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con5">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>96</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/5N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con6">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>122</y>
+     <width>98</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/6N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>190</y>
+     <width>200</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/assets/conjuntos/7N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="con8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 3px solid black;
+border-image: url(:/assets/conjuntos/8N.png);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>con8</zorder>
+  <zorder>con7</zorder>
+  <zorder>con3</zorder>
+  <zorder>con1</zorder>
+  <zorder>con2</zorder>
+  <zorder>con4</zorder>
+  <zorder>con6</zorder>
+  <zorder>con5</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

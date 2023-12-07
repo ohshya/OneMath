@@ -2,8 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <profiles.h>
-
+#include <mainWidgets/profiles.h>
 class QWidget;
 class QPushButton;
 

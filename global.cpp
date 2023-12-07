@@ -62,7 +62,7 @@ void global::reiniciarConjuntos(){
 
 void global::guardarPerfil()
 {
-    if (!currentProfile.isEmpty())
+    if (!currentProfile.isEmpty() && currentProfile != "No hay perfil")
     {
         QString carpetaPerfiles = QCoreApplication::applicationDirPath() + "/perfiles";
         QString filePath = QString("%1/%2.json").arg(carpetaPerfiles, currentProfile);

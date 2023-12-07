@@ -1,20 +1,23 @@
 #include "ui_mainwindow.h"
 #include "mainwindow.h"
 #include "global.h"
-#include "clickableframe.h"
+#include "mainWidgets/moduleselection.h"
+#include "mainWidgets/configuracion.h"
+#include "mainWidgets/profiles.h"
 
-#include "credits.h"
-#include "mybutton.h"
-#include "moduleselection.h"
-#include "profiles.h"
-#include "configuracion.h"
-#include "module1.h"
-#include "module1test.h"
-#include "module2.h"
-#include "module2test.h"
-#include "module3.h"
-#include "module3test.h"
-#include "module4.h"
+#include "popupWidgets/credits.h"
+
+#include "extendedWidgets/mybutton.h"
+#include "extendedWidgets/clickableframe.h"
+
+#include "modulesWidgets/module1.h"
+#include "modulesWidgets/module1test.h"
+#include "modulesWidgets/module2.h"
+#include "modulesWidgets/module2test.h"
+#include "modulesWidgets/module3.h"
+#include "modulesWidgets/module3test.h"
+#include "modulesWidgets/module4.h"
+
 #include <QLabel>
 #include <QFont>
 
@@ -32,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::setBG()
 {
-    QPixmap backgroundImage(":/assets/background2.jpg");
+    QPixmap backgroundImage(":/assets/otros/background2.jpg");
     backgroundImage = backgroundImage.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Window, backgroundImage);
@@ -44,7 +47,7 @@ void MainWindow::profileB()
     if (global::currentProfile.isEmpty() || global::currentProfile == "No hay perfil")
     {
         global::currentProfile="No hay perfil";
-        global::currentAvatar=":/users/users/noUser.png";
+        global::currentAvatar=":/assets/iconos/noUser.png";
         this->findChild<QPushButton*>("mainModulos")->setDisabled(true);
         this->findChild<QPushButton*>("mainModulos")->setToolTip("Primero debes crear un perfil");
     }
@@ -190,15 +193,15 @@ void MainWindow::logo_clicked()
     if (global::logo == 1)
     {
         mainWindowWidget->findChild<QFrame*>("logo")->setStyleSheet("ClickableFrame#logo{ \
-            image: url(:/assets/logo2.png);}");
+            image: url(:/assets/otros/logo2.png);}");
     }else if (global::logo == 2)
     {
         mainWindowWidget->findChild<QFrame*>("logo")->setStyleSheet("ClickableFrame#logo{ \
-            image: url(:/assets/logo3.png);}");
+            image: url(:/assets/otros/logo3.png);}");
     } else
     {
         mainWindowWidget->findChild<QFrame*>("logo")->setStyleSheet("ClickableFrame#logo{ \
-            image: url(:/assets/logo.png);}");
+            image: url(:/assets/otros/logo.png);}");
         global::logo = 0;
     }
 }

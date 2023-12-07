@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configuracion</class>
+ <widget class="QWidget" name="configuracion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe Print</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>383</y>
+     <width>500</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame4
+ {
+    border: 2px solid black;
+	border-radius: 30px;
+	background-color: white;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="maximumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_2{
+image: url(:/assets/iconos/upload.png);
+background: transparent;
+}
+QPushButton#pushButton_2:hover{
+	image: url(:/assets/iconos/uploadH.png);
+}
+QPushButton#pushButton_2:pressed{
+	image: url(:/assets/iconos/uploadP.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;📜 Exportar Registros&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#005500;&quot;&gt;Genera archivo de perfiles JSON&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="configBToMain">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#configBToMain{
+image: url(:/assets/iconos/home.png);
+background: transparent;
+}
+QPushButton#configBToMain:hover{
+	image: url(:/assets/iconos/homeH.png);
+}
+QPushButton#configBToMain:pressed{
+	image: url(:/assets/iconos/homeP.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>211</y>
+     <width>500</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame2
+ {
+    border: 2px solid black;
+    border-radius: 30px;
+	background-color: white;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>357</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;🔓 Acceso Total&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#fdbb14;&quot;&gt;Desbloquea todos los módulos, no hay progresión&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Switch" name="switchT2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>140</y>
+     <width>95</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Ajustes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>297</y>
+     <width>500</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame3
+ {
+    border: 2px solid black;
+    border-radius: 30px;
+	background-color: white;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;📜 Reiniciar Registros&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Elimina todos los perfiles, reinicia la progresión&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="maximumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton{
+image: url(:/assets/iconos/restart.png);
+background: transparent;
+}
+QPushButton#pushButton:hover{
+	image: url(:/assets/iconos/restartH.png);
+}
+QPushButton#pushButton:pressed{
+	image: url(:/assets/iconos/restartP.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Switch</class>
+   <extends>QWidget</extends>
+   <header>extendedWidgets/switch.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
