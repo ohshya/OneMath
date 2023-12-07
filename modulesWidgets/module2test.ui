@@ -626,7 +626,7 @@ border-radius: 10px;
   <customwidget>
    <class>conjuntos</class>
    <extends>QWidget</extends>
-   <header>conjuntos.h</header>
+   <header>extendedWidgets/conjuntos.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
